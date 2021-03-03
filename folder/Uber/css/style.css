@@ -1,0 +1,223 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+}
+
+nav{
+  height: 50px;
+  background-color: #212121;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+.menu .menu_link{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 28px; 
+}
+
+.subheader{
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 100%;
+    
+}
+
+.subheader .subheader_logo{
+    max-width: 100%;
+    margin-top: 16px;
+    display: block;
+}
+
+.subheader .subheader_official{
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.502);
+}
+
+.subheader .subheader_call{
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 23px;
+    line-height: 8px;
+}
+
+.subheader .subheader_phone{
+    line-height: 20px;
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.subheader .subheader_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0px -3px 0  rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4b3a3a;
+}
+
+.promo{
+    height: 800px;
+    background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+.promo .promo_header{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.promo .promo_subheader{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.promo .promo_descr{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 23px;
+}
+
+.promo .promo_btn{
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+}
+
+.reason{
+    min-height: 900px;
+    background-color: #ffffff;
+    padding: 71px 0 30px 0;
+}
+
+.label{
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.block{
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 8px 0 6px 0;
+    line-height: 1;
+}
+
+.title{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 0.8;
+    text-align: center;
+    color: #222222;
+    margin-top: 38px   ;
+    text-transform: uppercase;
+
+}
+
+.reason .reason_wrapper{
+    margin-top: 40px;
+}
+
+.reason .reason_wrapper .reason_item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+
+.reason .reason_wrapper .reason_item .reason_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    margin: 11px 26px 0 0;
+    border-radius: 50%
+}
+
+.reason .reason_wrapper .reason_item .reason_descr{
+    width: 341px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify;
+    color: #202020;
+    
+}
+
+.another_style{
+    font-size: 17px;
+    line-height: 1.235;
+    font-weight: 400;
+    color: #1eacc7;
+}
+
+.reason .reason_wrapper .reason_item .reason_round.down{
+    margin: -10px 26px 0 0;
+}
+
+  
