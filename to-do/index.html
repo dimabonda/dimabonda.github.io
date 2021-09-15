@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo</title>
+	<link rel="stylesheet" href="css/style.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+	<h1 class="header">My to-do list</h1>
+	<div class="todo_list">
+		<div class="todo_header">
+			<div class="todo-day"></div>
+			<button class="todo-btnday">choose date</button>
+		</div>
+		<input type="text" class="todo-input" placeholder="add new todo">
+		<ol class="todo-wrapper"></ol>
+		<div class="todo-footer">
+			<button class="todo-clear">Clear all</button>
+			<button class="todo-add">Add</button>
+		</div>
+	</div>
+
+	<div class="overlay">
+
+		<div class="calendar">
+			<div class="calendar_close">&times;</div>
+			<div class="calendar_nav">
+				<button class="prev"></button>
+				<div class="year"></div>
+				<button class="next"></button>
+			</div>
+				<div class="calendar-wrapper_btn">
+					<button class="calendar_btn year_btn calendar_btn_active">year</button>
+					<button class="calendar_btn month_btn">month</button>
+					<button class="calendar_btn day_btn">day</button>
+				</div>
+				
+	
+				<ul class="month_list">
+					<li class="month">
+						<div class="month_header">January</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>	
+					</li>
+					<li class="month">
+						<div class="month_header">February</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">March</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">April</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">May</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">June</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">July</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">August</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">September</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">October</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">November</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+					<li class="month">
+						<div class="month_header">December</div>
+						<div class="month_item">
+							<div class="week_days">
+								<div class="week_day">Sun</div>
+								<div class="week_day">Mon</div>
+								<div class="week_day">Tue</div>
+								<div class="week_day">Wed</div>
+								<div class="week_day">Thu</div>
+								<div class="week_day">Fri</div>
+								<div class="week_day">Sat</div>
+							</div>
+							<div class="month_days"></div>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+	
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<script> 
+	 // Your web app's Firebase configuration
+	const firebaseConfig = {
+		apiKey: "AIzaSyB72F3F1EvgajzWhjO8eQwSZLKhuwJ9WwY",
+		authDomain: "new-to-do-816cd.firebaseapp.com",
+		databaseURL: "https://new-to-do-816cd-default-rtdb.europe-west1.firebasedatabase.app",
+		projectId: "new-to-do-816cd",
+		storageBucket: "new-to-do-816cd.appspot.com",
+		messagingSenderId: "801736322333",
+		appId: "1:801736322333:web:2fcb4bf1e0368c8adfc5f4",
+		measurementId: "G-RXBCMLJ4HB"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig); 
+	</script>
+
+	<script type="module" src="js/index.js"></script>
+	
+</body>
+</html>
+
+		
